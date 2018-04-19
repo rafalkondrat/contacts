@@ -1,0 +1,11 @@
+<div class="contacts-list-container">
+  <div *ngFor="let contact of contacts; let i = index;">
+    {{i + 1}}
+    <app-contact [contact]="contact" (delete)="removeContact($event)" (edit)="editContact($event)"></app-contact>
+  </div>
+  <div *ngIf="isContactsListEmpty()">No contacts in DB</div>
+</div>
+
+<app-new-contact (add)="addContact($event)" [contact]="editedContact"></app-new-contact>
+
+<!--<app-contact *ngFor="let contact of contacts" [contact]="contact" (delete)="removeContact($event)"></app-contact>-->

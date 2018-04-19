@@ -1,0 +1,7 @@
+<div class="contact-container">
+  <span class="contact-name">{{contact?.name}}</span>
+  <span class="contact-email">{{contact?.email}}</span>
+  <span class="contact-phone">{{contact?.phone}}</span>
+  <span class="contact-action" (click)="removeContact(contact)">DELETE</span>
+  <span class="contact-action" (click)="editContact(contact)">EDIT</span>
+</div>

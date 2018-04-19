@@ -1,0 +1,27 @@
+.contact-container {
+  display: inline-flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 1px;
+  padding: 2px;
+  line-height: 25px;
+  background-color: #eeeeee;
+}
+
+.contact-name {
+  width: 200px;
+}
+
+.contact-phone {
+  width: 100px;
+}
+
+.contact-email {
+  width: 200px;
+}
+
+.contact-action {
+  text-align: right;
+  width: 100px;
+  cursor: pointer;
+}
